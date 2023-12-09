@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct HistoricalModel: Codable, Hashable{
+    let amount: String
+    let date: String
+    let fromCurrency: String
+    let toCurrency: String
+    let result: Float
+}

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol HomeRepoProtocol {
+    func fetchCurrencyRate(completion: @escaping (Result<Currency, Error>) -> Void)
+}

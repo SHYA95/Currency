@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class HomeUseCase {
+    private let homeRepo: HomeRepoProtocol
+
+    init(homeRepo: HomeRepoProtocol = HomeRepository()) {
+        self.homeRepo = homeRepo
+    }
+
+    func fetchCurrencyRate(completion: @escaping (Result<Currency, Error>) -> Void) {
+        homeRepo.fetchCurrencyRate(completion: completion)
+    }
+}

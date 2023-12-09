@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HomeRepoImple: HomeRepoProtocol {
+class HomeRepository: HomeRepoProtocol {
     private let networkService: MoyaNetworkService
 
     init(networkService: MoyaNetworkService = MoyaNetworkService()) {

@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol HistoricalRepoProtocol {
+    func readConversionResult(completion: @escaping (Result<[HistoricalModel], Error>) -> Void)
+    func saveConversionResult(historicalItem: [HistoricalModel], list: inout [HistoricalModel], completion: @escaping (Result<Void, Error>) -> Void)
+}
